@@ -30,7 +30,6 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                 </ul>
             </div>
@@ -88,7 +87,7 @@
                             <div>ENGIN 7: Introduction to Programming for Engineers</div>
                             <div>MATH 1B: Calculus II</div>
                             <div>MATH 53: Multivariable Calculus</div>
-                            <div>PHYSICS 7A: Physics for Scientists and Engineers</div>
+                            <div>PHYSICS 7A: Physics for Scientists and Engineers I</div>
                             <div>CS 197, 198, 199: Field Study, Special Topics, Supervised Independent Study</div>
                             <div>CS 399: Professional Preparation: Supervised Teaching of Computer Science</div>
                         </div>
@@ -110,7 +109,7 @@
                                 FEB is UC Berkeley's premier FSAE EV team; every year we build a custom, in-house electric race car from the ground up, starting from first-principle-justified electrical and mechanical design concepts. Currently, we are preparing SN4, our fourth ever car, for competition in June 2025. After this, we shall begin the iterative process again and start designing our next car, SN5.
                             </p>
                             <p>
-                                I am a member of the simulations subteam, responsible for vehicle dynamics modeling, accumulator analysis, and optimum laptime calculations. These simulations are crucial for understanding and deciding aerodynamic and vehicle dynamic design choices (e.g. wing and frontal area, tire size and type, etc). Previously, we have developed custom point mass models, but we have advanced to a bicycle model built using Guass-Legendre Collocation and nonlinear programming (NLP) optimization. As of recently, we are most focused on refining our model for better convergence through methods, such as regularization and warm start. You can read more about the basis of our model here.
+                                I am a member of the simulations-algorithms subteam, responsible for vehicle dynamics modeling, accumulator analysis, and optimum laptime calculations. These simulations are crucial for understanding and deciding aerodynamic and vehicle dynamic design choices (e.g. wing and frontal area, tire size and type, etc). Previously, we have developed custom point mass models, but we have advanced to a bicycle model built using Guass-Legendre Collocation and nonlinear programming (NLP) optimization. As of recently, we are most focused on refining our model for better convergence through methods, such as regularization and warm start. You can read more about the basis of our model here.
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">September 2024 - Present</span></div>
@@ -133,7 +132,19 @@
                             <h3 class="mb-0">Software Engineer Intern</h3>
                             <div class="subheading mb-3">Rehabilitation In Augmented Reality (REIA)</div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit ut massa porta luctus. Nulla vitae tortor ac velit eleifend gravida. Quisque orci augue, pretium vitae turpis sed, blandit hendrerit ligula. Donec lacus justo, ullamcorper et efficitur fringilla, hendrerit quis nisi. Fusce nec ultrices ligula. Nullam placerat, orci vitae pretium porta, odio felis vestibulum nulla, nec mollis diam diam in justo. Etiam sed lacinia nulla. Vivamus ac volutpat augue. Mauris bibendum tortor quis ante rutrum mattis. Etiam scelerisque cursus suscipit. Phasellus imperdiet dolor eu porttitor scelerisque.
+                                REIA is an on-going research project at the intersection of human-compuer interaction (HCI) and neurology, aimed at providing a novel approach to stroke physicalrehabilitation through mixed reality (MR). The ultimate goal of this project is to build a system capable of providing patients who have suffered stroke the ability to participate in physical therapy in the comfort of their own home, through virtual/remote consultations with medical professionals. Traditional stroke physical rehabilitation is very costly, not always accessible, and time-confusing for both patients and physical therapists, so this project hopes to bring accessability and affordability to patients, and scability to medical professionals. 
+                            </p>
+                            <p>
+                                Through this system, patients are able to video call therapists from a VR headset (i.e. Meta Oculus Quest 3); therapists will join via a custom portal, with access to patient notes, history, progress, videos, etc. During a consultation, patients will engage in physical therapy training scenarios just as they would in real life, only in augmented reality (AR) in their own home. These virtual training scenarios, such as reaching and grasping for an apple, have been replicated from physical scenarios that are considered standard medical practice for stroke rehabilitation.
+                            </p>
+                            <p>
+                                The headsets being used have advanced position and rotation tracking capabilities for upper extremities, allowing for data collection and trajectory evaluation; we also have the ability record patient movements in virtual reality (VR). I helped develop the pipeline for uploading and storing the numerical data and recordings from the headset and Unity to Google Cloud as well as creating evaluation criteria for patient movements through multivariate dynamic time-warping. Another feature of REIA is the LLM-Scenic-generation of virtual training scenarios by processing clinician annotations and instructions from consultations with patients.  
+                            </p>
+                            <p>
+                                The component I spent the most time on is efficient representation of large point clouds in 3D space through voxelization. The headset will record tens of thousands of points while a patient completes training scenarios, concentrated in areas reachable by a stroke patient's hand. Clinicians seek to view patients' reachable area for tracking progress and better catering training scenarios; to do this, one has to calculate the intersection of these points with other virtual objects (i.e. tables, shelves, etc.), but more efficiently by generalizing points into voxels (3D version of pixels). Now, tens of thousands of points can be accurately represented by only a few hundred voxels. Read more about voxelization and 3D space representation here. 
+                            </p>
+                            <p>
+                                This research project is under the facilitation of the UC Berkeley EECS Department and in collaboration with and under guidance of Stanford Medicine and UCSF Neurorecovery Clinic.
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">May 2024 - Present</span></div>
@@ -149,10 +160,20 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Voice Controlled Autonomous Car</h3>
+                            <h3 class="mb-0">Co-Founder & Chief Technology Officer</h3>
+                             <div class="subheading mb-3">Stealth Startup</div>
+                            <p>Working on a startup for improving the job recruitment industry. Staying dark for now, but you'll hear about us when we go public.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2025 - Present</span></div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Chief Engineer</h3>
+                             <div class="subheading mb-3">Voice-Controlled Autonomous Car</div>
                             <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2024 - May 2024</span></div>
                     </div>
                 </div>
             </section>
@@ -162,6 +183,18 @@
             <section class="resume-section" id="teaching">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Teaching</h2>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Teaching Assistant</h3>
+                            <div class="subheading mb-3">UC Berkeley Management, Entrepreneurship, Technology Innovation Academy (M.E.T. ia)</div>
+                            <p>
+                                The Management, Entrepreneurship, Technology (M.E.T.) is a dual-degree program at UC Berkeley, offering a B.S. in both and engineering field and Business Administration (through the College of Engineering and Haas School of Business). M.E.T. offers a summer accelerator-type program, Innovation Academy, aimed at giving high school students hands-on experience with product design, development, and delivery. The TAs play a large role in developing the curriculum and mentoring/advising student groups and their products. 
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2025 - Present</span></div>
+                    </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Course Coordinator - CS 61B</h3>
@@ -170,10 +203,10 @@
                                 CSM is the largest CS education organization at UC Berkeley, offering small group tutoring for seven of the largest undergraduate CS/EECS courses at the unviersity. Junior Mentors (JMs) lead tutoring sections of around five current students enrolled in the course; a group of JMs form a "family" led by a couple Senior Mentors (SMs). Each course has two course coordinators who communicate directly with SMs regarding course logistics, pedagogy for JMs, etc. CS 61B (Data Structures) is one of the larger courses of CSM and at UC Berkeley.
                             </p>
                             <p>
-                                Originally joining CSM as a Content Mentor (CM) focused on creating worksheet questions and walkthrough materials, on top of teaching a section, I continued working with content as a Senior Content Mentor. Now, I help manage the course serving as one of the CS 61B coordinators. 
+                                Originally joining CSM as a Content Mentor (CM) for CS 61B (Data Structures), where I focused on creating worksheet questions and walkthrough materials, on top of teaching a section, I continued working with content as a Senior Content Mentor. Now, I help manage the course serving as one of the CS 61B coordinators. 
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2025 - Present</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -181,10 +214,10 @@
                             <h3 class="mb-0">Lead Course Instructor - CS 198 & Head of Education</h3>
                             <div class="subheading mb-3">Extended Reality at Berkeley (XR@B)</div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit ut massa porta luctus. Nulla vitae tortor ac velit eleifend gravida. Quisque orci augue, pretium vitae turpis sed, blandit hendrerit ligula. Donec lacus justo, ullamcorper et efficitur fringilla, hendrerit quis nisi. Fusce nec ultrices ligula. Nullam placerat, orci vitae pretium porta, odio felis vestibulum nulla, nec mollis diam diam in justo. Etiam sed lacinia nulla. Vivamus ac volutpat augue. Mauris bibendum tortor quis ante rutrum mattis. Etiam scelerisque cursus suscipit. Phasellus imperdiet dolor eu porttitor scelerisque.
+                                Among the various career events and hackathons that XR@B hosts and participates in is the "Extended Reality Development" DeCal, run and taught by a team of undergraduate instructors. The course provides an in-depth introduction to the principles, techniques, applications, and social implications AR/VR development using Unity and Meta's Oculus Quest 2/3's. This DeCal has been around for 5+ years and has an suite of lab and homework assignments which have gone through many iterations. The lead course instructor is responsible for facilitating logistics betwen the university, sponsoring professor(s), and other student instructors. The syllabus for this DeCal can be found here.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2025 - Present</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -192,10 +225,10 @@
                             <h3 class="mb-0">Tutoring Committee</h3>
                             <div class="subheading mb-3">Eta Kappa Nu - Mu Chapter (IEEE-HKN EECS Honor Society)</div>
                             <p>
-                                UC Berkeley has one the most active chapters of HKN, an international honor society for electrical and electronics engineers. Out of eight total committees, Tutoring hosts  
+                                UC Berkeley hosts one the most active chapters of HKN, an international honor society for computer engineers. Out of eight total committees, Tutoring hosts tutoring hours and exam review sessions for both lower and upper division EECS/CS courses. We also develop "crib sheets" for material taught in these courses (in-depth notes with proofs, derivations, etc). A crib sheet on Balanced Trees (B-Trees) that I wrote can be found here.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2024 - Present</span></div>
                     </div>
                 </div>
 
@@ -208,6 +241,8 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>Apart from school, work, class, and clubs, I enjoy spending my time exercising and in the great outdoors: lifting in the gym, mountain biking in the hills of the East Bay and Marin County, hiking in Yosemite National Park and Pinecrest Lake.</p>
+
+                    <p>Fun fact: I was born in Oakland CA, just south of Berkeley and completed all of my pre-secondary education in a town called Albany, just north of Berkeley!</p>
                 </div>
             </section>
             <hr class="m-0" />
